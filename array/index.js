@@ -17,17 +17,33 @@
 // }
 
 
-var btn = document.getElementById("form")
-btn.onsubmit = function() {
-    var user = []
-    user[0] = document.getElementById("username").value;
-    user[1] = document.getElementById("password").value;
+// var btn = document.getElementById("form")
+// btn.onsubmit = function() {
+//     var user = []
+//     user[0] = document.getElementById("username").value;
+//     user[1] = document.getElementById("password").value;
 
-    if(user[0] === "ram"){
-        if(user[1] === "1234")
-            {window.alert("login success")}
-        else{window.alert("Wrong Password")}
-    }else {
-        window.alert("User not found")
-    }
+//     if(user[0] === "ram"){
+//         if(user[1] === "1234")
+//             {window.alert("login success")}
+//         else{window.alert("Wrong Password")}
+//     }else {
+//         window.alert("User not found")
+//     }
+// }
+
+
+
+
+var frm = document.getElementById("form")
+frm.onsubmit = function(){
+    var user = {firstname, lastname, result}
+
+    user.firstname = document.getElementById("firstname").value;
+    user.lastname = document.getElementById("lastname").value;
+    user.result = document.getElementById("result")
+
+    user.result.innerHTML = user.firstname + " " + user.lastname;
+
+    return false
 }
