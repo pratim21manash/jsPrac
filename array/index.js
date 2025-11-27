@@ -8,10 +8,26 @@
 // window.alert(x)
 
 
-var btn = document.getElementById("btn");
+// var btn = document.getElementById("btn");
 
-btn.onclick = function(){
-    var user_input = [];
-    user_input[0] = document.getElementById("user").value;  // use .value
-    window.alert(user_input)
+// btn.onclick = function(){
+//     var user_input = [];
+//     user_input[0] = document.getElementById("user").value;  // use .value
+//     window.alert(user_input)
+// }
+
+
+var btn = document.getElementById("form")
+btn.onsubmit = function() {
+    var user = []
+    user[0] = document.getElementById("username").value;
+    user[1] = document.getElementById("password").value;
+
+    if(user[0] === "ram"){
+        if(user[1] === "1234")
+            {window.alert("login success")}
+        else{window.alert("Wrong Password")}
+    }else {
+        window.alert("User not found")
+    }
 }
