@@ -1,6 +1,7 @@
 // var x = [6 , 'manash', "kashyap"]
 
 
+
 // var x = []
 // x[0] = 1;
 // x[1] = "manash";
@@ -35,15 +36,21 @@
 
 
 
-var frm = document.getElementById("form")
-frm.onsubmit = function(){
-    var user = {firstname, lastname, result}
+// var frm = document.getElementById("form")
+// frm.onsubmit = function(){
+//     var user = {firstname, lastname, result}
 
-    user.firstname = document.getElementById("firstname").value;
-    user.lastname = document.getElementById("lastname").value;
-    user.result = document.getElementById("result")
+//     user.firstname = document.getElementById("firstname").value;
+//     user.lastname = document.getElementById("lastname").value;
+//     user.result = document.getElementById("result")
 
-    user.result.innerHTML = user.firstname + " " + user.lastname;
+//     user.result.innerHTML = user.firstname + " " + user.lastname;
 
-    return false
-}
+//     return false
+// }
+
+
+
+var user = [1,5,8,11,2]
+user.sort(function(x,y){return x - y})
+window.alert(user.toString())
