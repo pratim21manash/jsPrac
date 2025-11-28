@@ -6,9 +6,9 @@ frm.onsubmit = function() {
 
     var i;
     for(i=1; i<=user_num; i++){
-        // document.write(user_text + "<br>")
-        result.innerHTML = user_text;
-        return false;
+        document.write(user_text + "<br>")
+        // result.innerHTML = user_text;
+        // return false;
     }
 
 }
